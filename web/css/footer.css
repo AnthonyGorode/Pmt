@@ -1,0 +1,11 @@
+#custom-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#custom-footer  {
+    margin-left: 22%;
+}
+#custom-footer a:hover {
+    transform: scale(1.05);
+}

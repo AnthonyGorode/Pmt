@@ -1,0 +1,42 @@
+<!-- forgot
+updated 18/07/2019-->
+<link rel="stylesheet" href="css/forgot.css" />
+<script type="text/javascript" src="js/forgot.js"></script>
+<form action="forgot" method="POST" onsubmit="displayPop()">
+	<div class="container white-box">
+		<div class="row justify-content-center">
+				<h2 class="for-h2">Saisie du nouveau mot de passe</h2>
+		</div>
+		<div class="row justify-content-center">
+			<!--<input type="text" value="<?= $oMain->result['crypted_key'];?>" id="crypted_key" class="form-control for-password">-->
+		</div>
+        <div class="row justify-content-center">
+			<input type="text" name="password_forgot" id="password_forgot" class="form-control for-password"  placeholder="Nouveau mot de passe" autocomplete="suggested:new-password">
+		</div>
+		<div class="row justify-content-center">
+			<input type="text" name="password_confirm_forgot" id="password_confirm_forgot" class="form-control for-password"  placeholder="Confirmer le mot de passe" autocomplete="suggested:new-password">
+		</div>
+		<div class="row justify-content-center">
+                <?php
+                    $res = $oMain->result['code_error'];
+                    if (isset($res) && $res !=='') {
+                        echo '<div class="c-tooltip bg-pink">'.$oMain->result['message_error'].'</div>';
+                    }
+                ?>
+		</div>
+		<div class="row justify-content-center">
+            <button class="btn btn-pink btn-big">Valider le nouveau mot de passe</button>
+		</div>
+	</div>
+</form>
+<div class="container">
+	<div class="row justify-content-center">
+		<div>
+			<br/>
+			<p><a href="index">Retour à la page de Connexion des formateurs</a></p>
+		</div>
+	</div>
+</div>
+<div id="for-info-pop" style="display:none">
+    <p>Votre mot de passe vient d'être réinitialisé!</p>
+</div>

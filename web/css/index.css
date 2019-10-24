@@ -1,0 +1,69 @@
+/*CONNEXION*/
+
+#formateur-email, #formateur-password
+{
+    margin: 25px 0px;
+    width: 300px;
+}
+
+#formateur-forgot-password
+{
+    color: var(--first-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.row
+{
+    margin:0;
+}
+
+.index-h2
+{
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;
+}
+
+#index-info-pop
+{
+    position: absolute;
+    padding:10px;
+    top:25px;
+    left:25px;
+    width: 30%;
+    justify-content: center;
+    background-color: white;
+    font-weight: 600;
+    color: var(--first-color);
+    border-radius: 12px;
+    border: 2px solid var(--first-color);
+    box-shadow: 5px 5px 5px  gray;
+}
+
+.modal-info
+{
+    color:red;
+}
+
+.c-tooltip
+{
+    margin: 0;
+}
+
+.index-c-tooltip
+{
+    margin-top: 20px;
+}
+
+.invalid-tootip
+{
+    border: 1px solid var(--fourth);
+    background-color: var(--fourth-bg);
+    color: var(--fourth);
+    font-size: 1.0rem;
+    padding: 5px;
+    font-weight: bold;
+}

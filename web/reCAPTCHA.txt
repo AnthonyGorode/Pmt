@@ -1,0 +1,7 @@
+recaptcha v2
+
+For the view you neeed
+clé site: 6LdgfKcUAAAAAK_x-rxsQeomyRqbxZ6iywNYzN9I
+
+For class Utils
+clé secritée: 6LdgfKcUAAAAABPTjGTY9eBQj9OIFJdlQ_n_JQiA

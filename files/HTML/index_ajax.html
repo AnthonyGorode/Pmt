@@ -1,0 +1,8 @@
+<?php
+	$array_res[0] = array(
+		'error' => $oMain->result['nb_form_error'],
+		'message' => $oMain->result['error_message']
+	);
+	// Prepare and send view
+	echo json_encode ($array_res);
+?>

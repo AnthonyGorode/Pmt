@@ -1,0 +1,159 @@
+/*************************/
+/* GLOBAL */
+/*************************/
+
+:root {
+    --first-color: #1F85DE;
+    --second-color: #DE1F85;
+    --third-color: #80ac29;
+    --hover-first-color: rgb(32, 111, 180);
+    --hover-second-color: #DE1F85;
+    --hover-third-color: white;
+    --border-first-color: rgba(103, 207, 255, 0.562);
+    --border-second-color: #DE1F85;
+    --border-third-color: #80ac29;
+    --fourth-color: #E1DEDD;
+    --white-color: white;
+    --gray-color: gray;
+    --black-color: black;
+    --red-color: red;
+    --orange-color: orange;
+    --Yellow-color: rgb(233, 212, 24);
+    --greenn-color: green;
+    --transparent: rgba(0,0,0,1);
+
+    --first: #80ac29;
+    --sec: #1F85DE;
+    --third: #E1DEDD;
+    --fourth: #DE1F85;
+    --fourth-bg: rgba(222, 31, 133, 0.3);
+
+    --white: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea:disabled {
+    background-color: rgba(140, 129, 172, 0.2) !important;
+}
+
+.btn-big {
+    height: 70px;
+    width: 300px;
+    margin: 50px 0;
+}
+
+.btn-md {
+    margin: 25px 0px;
+    width: 200px;
+    height: 50px;
+}
+
+.c-tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.invalid-tootip {
+    border: 1px solid var(--fourth);
+    background-color: var(--fourth-bg);
+    color: var(--fourth);
+    font-size: 1.0rem;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.btn-pink {
+    color: var(--white);
+    background-color: var(--fourth);
+    font-weight: bold;
+    border-color: var(--fourth);
+    border-radius: 4px;
+    border-width: 2px;
+    transition: 1s;
+}
+
+.btn-blue {
+    color: var(--white);
+    background-color: var(--sec);
+    font-weight: bold;
+    border-color: var(--sec);
+    border-radius: 4px;
+    border-width: 2px;
+    transition: 1s;
+}
+
+.btn-green {
+    color: var(--white-color);
+    background-color: var(--third-color);
+    font-weight: bold;
+    border-color: var(--third-color);
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.btn-big:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .3);
+}
+
+.btn-md:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .3);
+}
+
+.c-info-xs {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.text-pink {
+    color: var(--fourth);
+}
+
+.bg-pink {
+    background-color: var(--fourth-bg);
+}
+
+/******/
+/* END GLOBAL */
+/******/
+
+
+/*************************/
+/* MAIN */
+/*************************/
+
+.main-header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.main-section {
+    width: 100%;
+    flex-grow: 1;
+    background-attachment: fixed;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: var(--first);
+}
+
+/******/
+/* END MAIN */
+/******/

@@ -1,0 +1,1 @@
+UPDATE formateur SET mot_de_passe_formateur = '@pwd_formateur' WHERE id_formateur = '@id_formateur'

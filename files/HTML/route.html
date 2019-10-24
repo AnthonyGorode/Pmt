@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <title>PMT</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <script src="js/jquery v3.4.1.js"></script>
+
+    </head>
+
+    <!--BODY -->
+    <body class="app-body container-fluid m-0 p-0">
+
+        <!--HEADER -->
+        <div class="main-header">
+            <?php
+                include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"] . "header.html";
+            ?>
+        </div>
+
+        <!--SECTION -->
+        <div class="main-section">
+            <?php
+                include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"] . $monPHP . ".html"
+            ?>
+        </div>
+
+        <!--FOOTER -->
+        <div class="main-footer">
+            <?php
+                include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"] . "footer.html"
+            ?>
+        </div>
+
+        <div id="current-page"hidden>
+            <?= $monPHP ?>
+        </div>
+
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    <!--END BODY -->
+    </body>
+
+</html>

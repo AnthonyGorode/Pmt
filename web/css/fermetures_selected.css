@@ -1,0 +1,56 @@
+.vignette	{
+	border: 1px solid #7fc241;
+	padding:10px;
+	width: 160px;
+	border-radius: 10px;
+	height: 160px;
+	float: left;
+	position: relative;
+	margin-top:30px;
+	margin-left:38px;	
+}
+
+h2	{
+	font-size: 18px;
+	color: black;
+	text-align:center;
+}
+
+.span_vignette	{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color:#0af;
+}
+
+.img_vignette {
+	width:56px;
+	height:56px;
+	margin-left:50px;
+}
+
+#selected	{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color:white;
+}
+
+.selected	{
+	border: 1px solid white;
+	padding:10px;
+	width: 160px;
+	border-radius: 10px;
+	height: 160px;
+	float: left;
+	position: relative;
+	margin-top:30px;
+	margin-left:38px;	
+	background-color: #00aaff;
+}
+
+.white{
+	font-size: 18px;
+	color: white;
+	text-align:center;
+}

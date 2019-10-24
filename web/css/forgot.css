@@ -1,0 +1,23 @@
+.for-h2{
+    color:var(--second-color);
+    text-align: center;
+}
+
+#for-info-pop{
+    position: absolute;
+    padding:10px;
+    top:25px;
+    left:25px;
+    width: 25%;
+    justify-content: center;
+    background-color: white;
+    font-weight: 600;
+    color: var(--third-color);
+    border-radius: 12px;
+    border: 2px solid var(--third-color);
+    box-shadow: 5px 5px 5px  gray;
+}
+
+.for-password{
+    margin: 15px;
+}

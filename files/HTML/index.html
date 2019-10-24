@@ -1,0 +1,72 @@
+<?php
+$message_error = $oMain->result['message_error'];
+?>
+
+<link rel="stylesheet" href="css/index.css"/>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/index_ajax.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div>
+    <form onsubmit="return isCodeFormValid('index');" method="POST" action="index">
+        <div class="row justify-content-center">
+            <div>
+                <div class="c-tooltip bg-pink index-c-tooltip <?php echo (isset($message_error) & ($message_error != '')) ? ' invalid-tootip' : '' ?>" id="error-display">
+                    <?php
+                        if(isset($message_error) & ($message_error != ''))
+                            {
+                                echo $message_error;
+                            }
+                    ?>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center pb-3 pt-3">
+                    <div class="header-main-msg">Extranet PMT</div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email du formateur" name="email_formateur" id="formateur-email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Mot de passe" name="pwd_formateur" id="formateur-password">
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LdgfKcUAAAAAK_x-rxsQeomyRqbxZ6iywNYzN9I" data-type="image">
+                </div>
+                <input type="submit" class="btn-pink btn-big" name='submitpost' value="CONNEXION"/>
+
+                <p id="formateur-forgot-password" data-toggle="modal" data-target="#formateur-delete-modal"><a>Mot de passe oublié?</a></p>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="formateur-delete-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="index-h2">Réinitialiser votre mot de passe</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="resetInput()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <input type="text" class="form-control" id="formateur_mail_forgot" name="email_formateur_forgot"
+                           placeholder="Entrez votre email">formateur
+                    <div>
+                        <p class="modal-info"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" name="submit_mail" onclick="submitResetPassword();">Envoyer un code de
+                    réinitialisation</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--todo: revoir le display de la popup -->
+<div id="index-info-pop" style="display: none">
+    <p>Un email pour réinitialiser votre mot de passe viens de vous être envoyé!</p>
+</div>

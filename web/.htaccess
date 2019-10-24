@@ -1,0 +1,18 @@
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks -MultiViews
+
+# Activation du module de reecriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Regles de reecriture d'URL :
+#--------------------------------------------------
+
+# Redirection vers une classe uniquement :
+RewriteRule ^([a-z_]*)$   route.php?page=$1 [L]
+RewriteRule ^([a-z_]*)/$   route.php?page=$1 [L]
+
+# Redirection vers une classe avec un parametre
+RewriteRule ^([a-z_]*)/([a-z0-9_]*)$   route.php?page=$1&parametre=$2 [L]
+RewriteRule ^([a-z_]*)/([a-z0-9_]*)/$   route.php?page=$1&parametre=$2 [L]
+

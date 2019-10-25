@@ -5,11 +5,8 @@ body {
 	font-family: Calibri, Verdana, Arial, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
-}		
-section {
-	min-height: 510px;
 }
-h1	{
+.header_carre_title	{
 	font-size: 20px;
 	color: #7fc241;
 	margin-left: 15px;
@@ -29,8 +26,35 @@ span	{
 	position: relative;
 	cursor: pointer;
 }
-.header_carre{
-	
+#section-carre {
+	border: 1px solid #7fc241;
+	padding:15px;
+	width: 90%;
+	border-radius: 10px;
+	margin:10px;
+}
+.section_carre_element{
+	position: relative;
+	border: 1px solid #7fc241;
+	padding:15px;
+	width: 260px;
+	height: 205px;
+	border-radius: 10px;
+	margin:10px;
+}
+.section_carre_element_logo {
+	width: 64px;
+	height: 64px;
+}
+.section_carre_element_title {
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	margin-top: 15px;
+	text-align: center;
+}
+.span_blue{
+	color: #00aaff;
 }
 .contenu_carre{
 	padding: 6px;

@@ -15,9 +15,9 @@ updated 18/07/2019-->
 		</div>
 		<div class="row justify-content-center">
                 <?php
-                    $res = $oMain->result['code_error'];
-                    if (isset($res) && $res !=='') {
-                        echo '<div class="c-tooltip bg-pink">'.$oMain->result['message_error'].'</div>';
+					if (isset($oMain->result['code_error']) && $oMain->result['code_error'] !=='') {
+						$res = $oMain->result['code_error'];
+							echo '<div class="c-tooltip bg-pink">'.$oMain->result['message_error'].'</div>';
                     }
                 ?>
 		</div>

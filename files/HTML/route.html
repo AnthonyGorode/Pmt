@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-
     <head>
-
         <title>PMT</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +10,15 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-        <script src="js/jquery v3.4.1.js"></script>
-
+        <link rel="stylesheet" href="css/<?= $monPHP ?>.css"/>
     </head>
 
     <!--BODY -->
-    <body class="app-body container-fluid m-0 p-0">
+    <body class="app-body container-fluid">
 
         <!--HEADER -->
         <div class="main-header">
@@ -45,9 +44,10 @@
         <div id="current-page"hidden>
             <?= $monPHP ?>
         </div>
-
+        <script src="js/jquery v3.4.1.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/<?= $monPHP ?>.js"></script>
     <!--END BODY -->
     </body>
 

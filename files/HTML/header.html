@@ -1,17 +1,29 @@
-<!--EXT FILES-->
-<link rel="stylesheet" href="css/header.css">
 <!---->
 <div class="main-header">
     <header>
-
-        <div id="header">
-            
+        <div id="header">         
             <div id="eloce">
                 <img src="img/logo_eloce_final.png"/>
             </div>
 
-            <div id="logo">
-
+            <div id="logo" class="d-flex justify-content-center">
+                <?php
+                    if(isset($_SESSION['id_formateur']) && $_SESSION['id_formateur'] != ""){ 
+                ?>
+                    <img 
+                        id="img_connected" 
+                        onclick="window.location.replace('index')" 
+                        src="img/power-standby-8x.png" 
+                        onmouseover="this.src='img/power-standby-focus.png'"
+                        onmouseout="this.src='img/power-standby-8x.png'"
+                    />
+                    <div id="fullname_container">
+                        <div class="fullname_formateur"><?= $_SESSION['prenom_formateur'] ." ". $_SESSION['nom_formateur']; ?></div>
+                        <div style="font-size: initial;">gestion de compte</div>
+                    </div>
+                <?php
+                    }
+                ?>
             </div>
 
             <div id="afpa">

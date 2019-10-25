@@ -1,7 +1,7 @@
 #header {
     display: flex;
     clear: both;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -13,15 +13,9 @@
 }
 
 #eloce {
-    margin-left: 5%;
 }
 
 #afpa {
-    margin-right: 5%;
-}
-
-#logo {
-    display: flex;
 }
 
 #text {
@@ -59,7 +53,7 @@
 #Bleu1 {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #Bleu2 {
@@ -122,4 +116,31 @@ caption {
 td, td p {
     padding: 2px;
     margin: 2px;
+}
+
+/* 
+    CSS pour le logo et le fullname du formateur
+*/
+#logo {
+    display: flex;
+    align-items: center;
+    width: 26%;
+}
+#img-connected:hover {
+    border-radius: 10%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+#img_connected {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#fullname_container{
+    margin-left: 10%;
+}
+.fullname_formateur{
+    color: deepskyblue;
+    font-size: large;
 }

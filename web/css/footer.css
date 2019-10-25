@@ -1,11 +1,20 @@
-#custom-footer a {
+#logo-afpa-lab {
+    height: 55px;
+}
+#content-footer-container {
+    width: 40%;
+}
+.content_footer {
     color: #fff;
     text-decoration: none;
 }
-
-#custom-footer  {
-    margin-left: 22%;
-}
-#custom-footer a:hover {
+.content_footer:hover {
+    text-decoration: none;
     transform: scale(1.05);
+}
+.link_social a{
+    margin: 10px;
+}
+.link_social a img{
+    height: 55px;
 }

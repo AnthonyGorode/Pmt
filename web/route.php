@@ -20,8 +20,8 @@
 
 
 	// list of classes authorized when you are NOT connected
-	$list_class = array("index", "index_ajax","forgot", "gestion", "section", "btn", "btn_plus", "fa_selected", "fermetures_selected", "formation", "formation_selected", "modalites_selected", "parametrage_selected", "pmt_selected", "production_selected", "retour_production", "rythme_selected", "stagiaire_selected", "vignette");
-	if(!isset($_SESSION["id_user"]) ||(isset($_SESSION["id_user"])&& $_SESSION["id_user"]== "")){
+	$list_class = array("index", "index_ajax","forgot", "gestion","gestion_ajax","accueil","accueil_ajax","formation");
+	if(!isset($_SESSION["id_formateur"]) ||(isset($_SESSION["id_formateur"])&& $_SESSION["id_formateur"]== "")){
 		if(!in_array($monPHP, $list_class)){
 			$monPHP = "index";
 		}		

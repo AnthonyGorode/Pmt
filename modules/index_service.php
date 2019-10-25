@@ -19,12 +19,15 @@ class Index_service extends Initialize
 
 //todo : crypter les mots de passe en BDD
     public function getSingleFormateur() {
-        error_log('REQUEST ONE FORMATEUR');
+        error_log('REQUEST THE ONE FORMATEUR');
         $spathSQL= $this->GLOBALS_INI['PATH_HOME'] . $this->GLOBALS_INI['PATH_SQL'] . 'get_single_formateur.sql';
+        error_log($spathSQL);
+        
         $cryptedPassword = Utils::crypterSSL($this->VARS_HTML['email_formateur'], $this->VARS_HTML['pwd_formateur']);
+        error_log("Mot de passe crypté : ".$cryptedPassword);
         $this->result['select_formateur']= $this->oBdd->getSelectDatas($spathSQL, array(
             'email_formateur' => $this->VARS_HTML['email_formateur'],
-            'pwd_formateur' => $cryptedPassword
+            'mot_de_passe_formateur' => $cryptedPassword
         ));
     }
 

@@ -21,9 +21,7 @@ submitResetPassword = () => {
  *   Return boolean
  */
 const isCodeFormValid = () => {
-    let isCodeValid = true;
-    let isMailValid = false;
-    let isPasswordValid = false;
+    let isCodeValid = false;
     let el = $('#error-display');
     let aOfDatas = [
         {type : 'email', val : $('#formateur-email').val().toLowerCase()},
@@ -35,18 +33,18 @@ const isCodeFormValid = () => {
         switch(data.type) {
             case "email":
                 let isValid = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$', 'i');
-                isMailValid = isValid.test(data.val);
+                isCodeValid = isValid.test(data.val);
 
                 break;
             case "password":
-                (data.val !== "") ? isPasswordValid = true : isPasswordValid = false;
+                (data.val !== "") ? isCodeValid = true : isCodeValid = false;
                 break;
             default:
                 break
         }
     });
 
-    if(!isMailValid || !isPasswordValid) {
+    if(!isCodeValid) {
         el.parent().parent().find('.c-tooltip')
             .addClass('invalid-tootip')
             .html("Vos identifiants sont incorrects.")
@@ -56,11 +54,10 @@ const isCodeFormValid = () => {
                 .removeClass('invalid-tootip')
                 .html("")
         }, 2000)
-        isCodeValid = false;
     }
-    return isCodeValid;
+    return isCodeValid
 
-}
+};
 
 
 function resetInput() {

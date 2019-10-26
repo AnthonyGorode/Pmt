@@ -1,6 +1,6 @@
 <div id="page">
     <section class="d-flex flex-wrap justify-content-center justify-content-md-between pt-5">
-        <div class="carre" onclick="toggleCarre(1)">
+        <div class="carre" onclick="toggleCarre('parametre',1)">
             <div class="header_carre d-flex align-items-center">
                 <img src="img/cog.png" alt="Photo de cog"/>
                 <h1 class="header_carre_title">Paramétrage de la formation</h1>
@@ -10,7 +10,7 @@
             <span>(1)</span>
         </div>
 
-        <div class="carre" onclick="toggleCarre(2)">
+        <div class="carre" onclick="toggleCarre('programme',2)">
             <div class="header_carre d-flex align-items-center">
                 <img src="img/list.png" alt="Photo de cog"/>
                 <h1 class="header_carre_title">Programme mensuel de Travail</h1>
@@ -20,7 +20,7 @@
             <span>(2)</span>
         </div>
 
-        <div class="carre" onclick="toggleCarre(3)">
+        <div class="carre" onclick="toggleCarre('production',3)">
             <div class="header_carre d-flex align-items-center">
                 <img src="img/bell.png" alt="Photo de cog"/>
                 <h1 class="header_carre_title">Retour sur production</h1>
@@ -30,7 +30,7 @@
             <span>(3)</span>
         </div>
         
-        <div class="carre" onclick="toggleCarre(4)">
+        <div class="carre" onclick="toggleCarre('assiduite',4)">
             <div class="header_carre d-flex align-items-center">
                 <img src="img/circle-check.png" alt="Photo de cog"/>
                 <h1 class="header_carre_title">Feuilles d'assiduité</h1>
@@ -48,53 +48,10 @@
         <div id="carre-4" class="carre_absolute" ishow=""></div>
     </section>
 
-    <section class="d-flex flex-wrap justify-content-center justify-content-md-around pt-5">
-        <div id="section-carre" class="d-flex justify-content-between">
-            <div class="section_carre_element">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="section_carre_element_logo" src="img/Cap.png" alt="Photo de cog"/>
-                    <h1 class="section_carre_element_title">FORMATION SESSION</h1>
-                </div>
-                <br>
-                <span class="span_blue">(2)</span>
-            </div>
-
-            <div class="section_carre_element">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="section_carre_element_logo" src="img/people.png" alt="Photo de cog"/>
-                    <h1 class="section_carre_element_title">STAGIAIRES</h1>
-                </div>
-                <br>
-                <span class="span_blue">(2)</span>
-            </div>
-            <!-- <div id="test"></div>
-            <div id="test2"></div> -->
-            <div class="section_carre_element">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="section_carre_element_logo" src="img/list_blue.png" alt="Photo de cog"/>
-                    <h1 class="section_carre_element_title">MODALITES PMT</h1>
-                </div>
-                <br>
-                <span class="span_blue">(2)</span>
-            </div>
-
-            <div class="section_carre_element">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="section_carre_element_logo" src="img/clock.png" alt="Photo de cog"/>
-                    <h1 class="section_carre_element_title">RYTHME HEBDOMADAIRE</h1>
-                </div>
-                <br>
-                <span class="span_blue">(2)</span>
-            </div>
-
-            <div class="section_carre_element">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img class="section_carre_element_logo" src="img/sun.png" alt="Photo de cog"/>
-                    <h1 class="section_carre_element_title">JOURS DE FERMETURE EXCEPTIONNELLE</h1>
-                </div>
-                <br>
-                <span class="span_blue">(2)</span>
-            </div>
-        </div>
-    </section>
+    <section  id="under-section" class="mt-5"></section>
 </div>
+
+<script src="js/template/accueil/templates_parametre.js"></script>
+<script src="js/template/accueil/templates_programme.js"></script>
+<script src="js/template/accueil/templates_production.js"></script>
+<script src="js/template/accueil/templates_assiduite.js"></script>

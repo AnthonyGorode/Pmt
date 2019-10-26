@@ -29,8 +29,9 @@ span	{
 
 #absolute-section {
 	position: absolute;
-    top: 310px;
-    width: 100%;
+    top: 305px;
+	width: 100%;
+	z-index: 1;
 }
 .carre_absolute	{
 	border: 1px solid transparent;
@@ -44,10 +45,34 @@ span	{
 	position: relative;
 }
 
-
-#section-carre {
+#under-section {
+	position: relative;
+	border-radius: 12px;
+    margin-bottom: 20px;
+}
+#absolute-section-accueil {
+	position: absolute;
+    top: 206px;
 	width: 100%;
-	border: 1px solid #7fc241;
+	padding:15px;
+	margin:5px;
+}
+.absolute_section_accueil_element {
+	border: 1px solid transparent;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	background: transparent;
+    
+	position: relative;
+	padding:15px;
+	width: 230px;
+	height: 73px;
+	margin: 10px;
+	z-index: 1;
+}
+
+.section_carre {
+	width: 100%;
 	padding:15px;
 	border-radius: 10px;
 	margin:5px;
@@ -61,6 +86,7 @@ span	{
 	height: 225px;
 	border-radius: 10px;
 	margin:10px;
+	cursor: pointer;
 }
 .section_carre_element_logo {
 	width: 64px;
@@ -72,6 +98,48 @@ span	{
 	font-weight: bold;
 	margin-top: 15px;
 	text-align: center;
+}
+
+#section-formation-session {
+	position: relative;
+	border: 1px solid #7fc241;
+	padding:15px;
+	width: 100%;
+	height: 225px;
+	border-radius: 10px;
+	margin: 5px;
+}
+#section-programme {
+	position: relative;
+	padding:15px;
+	width: 100%;
+	height: 225px;
+	border-radius: 10px;
+	margin: 5px;
+}
+#section-production {
+	position: relative;
+	padding:15px;
+	width: 100%;
+	height: 225px;
+	border-radius: 10px;
+	margin: 5px;
+}
+#section-assiduite {
+	position: relative;
+	padding:15px;
+	width: 100%;
+	height: 225px;
+	border-radius: 10px;
+	margin: 5px;
+}
+.section_carre_parameter_element {
+	width: 100%;
+	padding:13px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin:5px;
+	margin-bottom: 10px;
 }
 .span_blue {
 	color: #00aaff;
@@ -87,6 +155,6 @@ span	{
 }
 span {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	right: 10px;
 }

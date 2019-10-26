@@ -1,10 +1,10 @@
 body {
-	/* margin: auto !important;
-	margin-top: 8px;
-	max-width: 1150px; */
 	font-family: Calibri, Verdana, Arial, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+}
+#page{
+	position: relative;
 }
 .header_carre_title	{
 	font-size: 20px;
@@ -15,7 +15,6 @@ span	{
 	margin-left: 200px;
 	color:#7fc241;
 }
-
 .carre	{
 	border: 1px solid #7fc241;
 	padding:15px;
@@ -26,19 +25,40 @@ span	{
 	position: relative;
 	cursor: pointer;
 }
+
+
+#absolute-section {
+	position: absolute;
+    top: 310px;
+    width: 100%;
+}
+.carre_absolute	{
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+    background: transparent;
+	padding:15px;
+	width: 270px;
+	height: 77px;
+	margin:10px;
+	position: relative;
+}
+
+
 #section-carre {
+	width: 100%;
 	border: 1px solid #7fc241;
 	padding:15px;
-	width: 90%;
 	border-radius: 10px;
-	margin:10px;
+	margin:5px;
+	margin-bottom: 10px;
 }
 .section_carre_element{
 	position: relative;
 	border: 1px solid #7fc241;
 	padding:15px;
-	width: 260px;
-	height: 205px;
+	width: 230px;
+	height: 225px;
 	border-radius: 10px;
 	margin:10px;
 }
@@ -47,25 +67,25 @@ span	{
 	height: 64px;
 }
 .section_carre_element_title {
-	font-size: 24px;
+	font-size: 20px;
 	color: black;
 	font-weight: bold;
 	margin-top: 15px;
 	text-align: center;
 }
-.span_blue{
+.span_blue {
 	color: #00aaff;
 }
-.contenu_carre{
+.contenu_carre {
 	padding: 6px;
 	padding-top: 20px;
 }
-.container:after{
+.container:after {
 	content:"";
 	display: block;
 	clear: both;
 }
-span	{
+span {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
